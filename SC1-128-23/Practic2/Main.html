@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" name="form_1">
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <table width="700px">
+                <tr>
+                    <td><label for="name">Имя</label></td>
+                    <td> <input required type="text" name="name" id="name"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone_number">Телефон</label></td>
+                    <td> <input type="tel" name="Phone_number" id="Phone_number"> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input required type="email" name="email" id="email"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <table width="700px">
+                <tr>
+                    <td><label for="age">Возраст</label></td>
+                    <td><input required type="text" name="age" id="age"></td>
+                </tr>
+                <tr>
+                    <td>Пол</td>
+                    <td><select name="gender">
+                        <option value="Man">Мужчина</option>
+                        <option value="Women">Женщина</option>
+                    </select> <br></td>
+                </tr>
+                <tr>
+                    <td><label for="comment">Перечислите <br>личные <br> качества</label></td>
+                    <td><textarea name="comment" cols="30" rows="10" id="comment"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваших любимых живатных</legend>
+            <table width="400px">
+            <tr>
+                <td>Зебра<input type="checkbox" name="lines_horse"></td>
+                <td>Собака<input type="checkbox" name="dog"></td>
+                <td>Улитка<input type="checkbox" name="warm"></td>
+                <td>Кот<input type="checkbox" name="саt"><br></td>
+            </tr>
+            <tr>
+                <td>Зубр<input type="checkbox" name="cow"></td>
+                <td>Слон<input type="checkbox" name="elephant"></td>
+                <td>Голубь<input type="checkbox" name="bird"></td>
+                <td>Утконос<input type="checkbox" name="nose_duck"></td>
+            </tr>
+        </table>
+        </fieldset>
+        <input type="submit" value="Отправить информацию">
+    </form>
+
+</body>
+
+</html>
