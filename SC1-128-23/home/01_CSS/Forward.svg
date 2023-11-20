@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x30_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:#FFFFFF;}
+</style>
+<g id="CIRCLE">
+	<circle class="st0" cx="200" cy="200" r="200"/>
+</g>
+<g id="CIRCLE_00000152970448117175023540000002217860354360374946_">
+	
+		<radialGradient id="SVGID_1_" cx="200.625" cy="233.1155" r="365.1091" fx="201.4761" fy="581.7694" gradientTransform="matrix(1 0 0 -1.0193 0 404.4975)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.253" style="stop-color:#D0D3E8"/>
+		<stop  offset="0.3158" style="stop-color:#C8CCE4"/>
+		<stop  offset="0.4116" style="stop-color:#B3B8DA"/>
+		<stop  offset="0.5284" style="stop-color:#9198C9"/>
+		<stop  offset="0.6479" style="stop-color:#6670B4"/>
+	</radialGradient>
+	<circle class="st1" cx="199.5" cy="199.5" r="200"/>
+	<g id="LWPOLYLINE">
+		<path class="st2" d="M215.8,91.9l82.2,93.9c7.1,8.1,7.1,20.3,0,28.4l-82.2,93.9c-7.8,8.9-21.4,9.9-30.4,2
+			c-8.9-7.8-9.9-21.4-2-30.4l50.9-58.2H82.9c-11.9,0-21.5-9.6-21.5-21.5s9.6-21.5,21.5-21.5h151.4l-50.9-58.2
+			c-7.8-8.9-6.9-22.6,2-30.4S208,83,215.8,91.9z"/>
+	</g>
+</g>
+</svg>
