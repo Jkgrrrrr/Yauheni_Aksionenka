@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: normal;
+        }
+
+        .main_block {
+            padding: 5px;
+        }
+
+        .block_navi {
+            width: 15em;
+            height: fit-content;
+            background: #ccc;
+            padding-top: 10px;
+            float: left;
+        }
+
+        ul li {
+            white-space: pre-line;
+
+        }
+
+        span {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .article_block {
+            background: #aaa;
+            margin-bottom: -0.8em;
+            margin-left: 15em;
+            height: fit-content;
+
+        }
+
+        p {
+            white-space: pre-line;
+        }
+
+        .footer {
+            clear: both;
+            background: #ccc;
+            height: auto;
+
+        }
+
+        .wrap {
+            background: #dbdbdb;
+
+        }
+
+        .inv_line {
+            margin-top: 0.8em;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_block">
+        <div class="wrap">
+            <div class="block_navi">
+                <span>Блок навигации</span>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Распологается слева</li>
+                    <li>Блок навигации наполните
+                        контентом достаточным,
+                        чтобы по высоте он начинал
+                        захватывать вторую статью,
+                        как показано в данном
+                        примере
+                    </li>
+                </ul>
+            </div>
+
+            <div class="article_block">
+                <span>Статья 1</span>
+                <p>Размер блока:
+                    Занимает всю доступную ширину
+                    Должен присутствовать цвет фона
+                    Во всех "Статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin-
+                    bottom </p>
+            </div>
+            <div class="article_block">
+                <span>Статья 2</span>
+                <p>Размер блока:
+                    Занимает всю доступную ширину
+                    Должен присутствовать цвет фона
+                    Во всех "Статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin-
+                    bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри
+                    данной статьи для этой картинки.
+                    <img align="right" src="navigation.png" alt="mail">
+                </p>
+                <div class="inv_line"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="inv_line"></div>
+
+            <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
