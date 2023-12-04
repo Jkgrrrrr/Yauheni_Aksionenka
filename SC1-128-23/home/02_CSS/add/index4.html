@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_block {
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+            background: #dbdbdb;
+        }
+
+        .contein {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.2em;
+        }
+
+        .block_for_content {
+            display: flex;
+            background: #dbdbdb;
+            flex-direction: column;
+        }
+        .fotter {
+            background: #ccc;
+            margin-top: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_block">
+        <div class="block_for_content">
+            <div class="contein" style="width: 15em; background: #ccc;">
+                <h3>Блок навигации</h3>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Распологается слева</li>
+                    <li>Блок навигации наполните<br>
+                        контентом достаточным,<br>
+                        чтобы по высоте он начинал<br>
+                        захватывать вторую статью,<br>
+                        как показано в данном<br>
+                        примере
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="block_for_content">
+            <div class="contein" style="background-color: #aaa;">
+                <h3>Статья 1</h3>
+                <p>Размер блока: <br>
+                    Занимает всю доступную ширину <br>
+                    Должен присутствовать цвет фона <br>
+                    Во всех "Статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin- <br>
+                    bottom </p>
+            </div>
+            <div class="contein" style="background-color: #aaa;">
+                <h3>Статья 2</h3>
+                <p>Размер блока: <br>
+                    Занимает всю доступную ширину <br>
+                    Должен присутствовать цвет фона <br>
+                    Во всех "Статьях" сделайте отступ снизу от соседей равным .2em, при помощи margin- <br>
+                    bottom. Картинка вставлена при помощи тега, плавание организовано по правому краю внутри <br>
+                    данной статьи для этой картинки. <br>
+                    <img align="right" src="../base/navigation.png" alt="mail">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fotter">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+
+    </div>
+
+</body>
+
+</html>
