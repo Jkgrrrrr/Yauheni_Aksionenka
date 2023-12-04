@@ -6,7 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @import url(style.css);
+        .header {
+            background-color: #cfe2f3;
+            padding: 10px;
+
+        }
+
+        .header_slot {
+            background-color: #93c47d;
+            height: 30px;
+            width: 300px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .line_down {
+            clear: both;
+        }
+
+        .navigation {
+            background-color: #93c47d;
+            height: 500px;
+            width: 320px;
+            float: left;
+
+        }
+
+        .navigation_slot {
+            background-color: #ffe599;
+            height: 30px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        .banner {
+            background-color: #93c47d;
+            height: 500px;
+            float: right;
+            width: 320px;
+        }
+
+        .banner_window {
+            background-color: #cfe2f3;
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+
+        }
+
+        .content {
+            background-color: #8e7cc3;
+            padding: 35px 370px 70px 435px;
+
+        }
+
+        .content_window {
+            background-color: #cfe2f3;
+            height: 250px;
+            width: 300px;
+        }
+
+
+        .footer {
+            background-color: #cfe2f3;
+            height: 50px;
+        }
+
+        @media all and (max-width: 1295px) {
+
+
+            .header_slot {
+                background-color: #93c47d;
+                float: none;
+                margin: 10px;
+            }
+
+            .navigation {
+                background-color: #93c47d;
+                height: auto;
+                width: auto;
+                float: none;
+                padding: 10px;
+
+            }
+
+            .banner {
+                background-color: #93c47d;
+                height: 350px;
+                width: auto;
+                float: none;
+                padding: 35px;
+            }
+
+            .banner_window {
+                background-color: #cfe2f3;
+                height: 250px;
+                width: 250px;
+
+            }
+
+            .content {
+                background-color: #8e7cc3;
+                padding: 35px;
+                width: auto;
+
+            }
+
+            .content_window {
+                background-color: #cfe2f3;
+                height: 250px;
+                width: 300px;
+
+            }
+
+            .footer {
+                background-color: #cfe2f3;
+
+                height: 50px;
+
+            }
+        }
     </style>
 </head>
 
@@ -29,16 +148,13 @@
         <div class="banner">
             <div class="banner_window"></div>
         </div>
-
         <div class="content">
             <div class="content_window">
                 <div class="line_down"></div>
             </div>
         </div>
-        
+        <div class="line_down"></div>
     </div>
-    <div class="line_down"></div>
-
     <div class="footer"></div>
 
 
