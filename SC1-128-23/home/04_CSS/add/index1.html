@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        p {
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #d5d5d5;
+            border-radius: 0 20px 0 20px;
+        }
+
+        a[href$='.doc']::before {
+            content: url(./IMG/document.png);
+        }
+
+        a[href$='.docx']::after {
+            content: url(./IMG/word.jpg);
+        }
+
+        a[href$='.pdf']::after {
+            content: url(./IMG/pdf.png);
+        }
+
+        a[href$='.zip']::after {
+            content: url(./IMG/zip.gif);
+        }
+
+        div a::before {
+            content: url(./IMG/file.jpg); 
+            padding-right: 6px;
+        }
+
+        div img {
+            opacity: 0;
+        }
+
+        div a[href$='.docx']::after {
+            opacity: 0;
+        }
+
+        div a[href$='.pdf']::after {
+            opacity: 0;
+        }
+
+        div a[href$='.zip']::after {
+            opacity: 0;
+        }
+
+        div:hover > a::after {
+            opacity: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Форматы файлов.</h1>
+    <p>.DOC или .doc (от англ. <a href=".doc">document</a>) - расширение имени файла,
+        исползуемое для файлов,
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для
+        обозначения простых текстовых файлов без формирования, однако позже стало
+        использоваться для двоичных форматов с разметкой. <br>
+        <a href=".docx">Документ MS word</a>
+    </p>
+    <p>
+        Portable Document Format(<a href=".doc">PDF</a>) - межплатформенный формат
+        электронных документов,
+        разработанный фирмой Adobe Systems с использованием ряда возможностей языка
+        Postscript. <br>
+        <a href=".pdf">Документ PDF</a>
+    </p>
+    <p>
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате
+        обычно имеет расширение <a href=".doc">.zip</a> и хранит в сжатом или несжатом
+        виде один или несколько
+        файлов, которое можно из него извлечь путем распаковки с помощью специальной
+        программы. <br>
+        <a href=".zip">Архив</a>
+    </p>
+
+
+
+    <h2>Это список файлов</h2>
+
+    <div>
+        <a href=".docx">Документ MS Word</a>
+        
+    </div>
+    <div>
+        <a href=".pdf">PDF</a>
+        
+    </div>
+    <div>
+        <a href=".zip">Архив</a>
+    </div>
+
+</body>
+
+</html>
