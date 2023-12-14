@@ -1,0 +1,15 @@
+.table_1 {
+    list-style-type: circle;
+
+    & a {
+        color: #42c0e0;
+        text-decoration: underline;
+    }
+}
+
+div:nth-child(3) p:first-child,
+div:nth-child(4) p:first-child,
+div:nth-child(5) p:first-child {
+    color: #42c0e0;
+    font-size: 45px;
+}
