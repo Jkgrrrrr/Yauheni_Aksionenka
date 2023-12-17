@@ -16,6 +16,8 @@
 
             & td {
                 border: 2px dotted #808080;
+                padding: 5px;
+                cursor: pointer;
             }
         }
 
@@ -37,9 +39,23 @@
         table tr:nth-child(4):hover,
         table tr:nth-child(5):hover,
         table tr:nth-child(6):hover {
-            cursor: pointer;
+
             background-color: aquamarine;
-            
+
+        }
+
+        button {
+            border: 2px solid #808080;
+            border-radius: 7px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+            font-family: "Gill Sans", sans-serif;
+            font-size: 18px;
+            padding: 10px;
+            color: #fff;
+            background-color: #0d56d3;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -96,6 +112,57 @@
         </tr>
     </table>
 
+    <button>Нет скрытых строк</button>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function ($) {
+
+
+            $('table tr:nth-child(2)').on('click', function () {
+                $('table tr:nth-child(2)').hide();
+                $('button').html('Показать все строки');
+
+            })
+
+            $('table tr:nth-child(3)').on('click', function () {
+                $('table tr:nth-child(3)').hide();
+                $('button').html('Показать все строки');
+
+            })
+
+            $('table tr:nth-child(4)').on('click', function () {
+                $('table tr:nth-child(4)').hide();
+                $('button').html('Показать все строки');
+
+            })
+
+            $('table tr:nth-child(5)').on('click', function () {
+                $('table tr:nth-child(5)').hide();
+                $('button').html('Показать все строки');
+
+            })
+
+            $('table tr:nth-child(6)').on('click', function () {
+                $('table tr:nth-child(6)').hide();
+                $('button').html('Показать все строки');
+
+            })
+
+            $('button').on('click', function () {
+                $('tr').show();
+                $('button').html('Нет скрытых строк');
+            })
+
+        })
+    </script>
 </body>
 
 </html>
