@@ -114,44 +114,13 @@
 
     <button>Нет скрытых строк</button>
 
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        $(document).ready(function ($) {
+        $(document).ready(function () {
 
-
-            $('table tr:nth-child(2)').on('click', function () {
-                $('table tr:nth-child(2)').hide();
-                $('button').html('Показать все строки');
-
-            })
-
-            $('table tr:nth-child(3)').on('click', function () {
-                $('table tr:nth-child(3)').hide();
-                $('button').html('Показать все строки');
-
-            })
-
-            $('table tr:nth-child(4)').on('click', function () {
-                $('table tr:nth-child(4)').hide();
-                $('button').html('Показать все строки');
-
-            })
-
-            $('table tr:nth-child(5)').on('click', function () {
-                $('table tr:nth-child(5)').hide();
-                $('button').html('Показать все строки');
-
-            })
-
-            $('table tr:nth-child(6)').on('click', function () {
-                $('table tr:nth-child(6)').hide();
+            $('table tr').on('click', function () {
+                $(this).hide();
                 $('button').html('Показать все строки');
 
             })

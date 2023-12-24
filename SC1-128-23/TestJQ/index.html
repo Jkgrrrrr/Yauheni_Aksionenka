@@ -9,8 +9,7 @@
 
 <body>
 
-    <div id="aaa">test</div>
-    <button id="btn">click</button>
+    <h1>hello</h1>
 
 
 
@@ -21,13 +20,9 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function ($) {
-            $('#btn').on('click', function () {
-                $('#aaa').animate({
-                    marginLeft:200
-                }, 3000, function(){
-                    alert('hello');
-                })
-            });
+
+            $('h1').css("color","red");
+           
         });
 
     </script>

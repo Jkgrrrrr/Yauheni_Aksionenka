@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        form {
+            border: 2px solid #3b3333;
+            border-radius: 5px;
+            width: max-content;
+            padding: 10px;
+
+        }
+
+        input,
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Проверка пароля</h1>
+    <form action="#">
+        <input type="text" id="password" maxlength="10"> * Пароль <br>
+        <input type="text" id="check" maxlength="10"> * Проверка пароля <br>
+        <button type="submit">Отправить</button>
+    </form>
+    <script>
+        $('#password').keypress(function (event) {
+            var pass_w = event.whitch;
+            $(this).css('background-color', '#d1d7b8');
+        });
+        $('#check').keypress(function (event) {
+            var pass_c = event.whitch;
+            if( pass_c === pass_w) {
+                    $('#check').css('background-color', '#d1d7b8')
+
+                };
+        });
+                
+
+    </script>
+
+</body>
+
+</html>
